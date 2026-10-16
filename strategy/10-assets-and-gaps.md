@@ -33,10 +33,10 @@ ASSET MAP — <ID>
 
 | # | Scene | Needs | Have | Status |
 |---|---|---|---|---|
-| 1 | hook: the moment | clip of the volunteer at the gate at dawn | A04 (0:12–0:19) | have |
+| 1 | hook: the moment | clip of the gauge dropping into the chain | A02 (0:00–0:04) | have |
 | 2 | signature | the owner, clean, anywhere | A01 | have |
-| 3 | the step on screen | screen recording of the marker dropping | — | GAP |
-| 4 | the result | her phone showing the marker | A07 (still) | partial: still, not motion |
+| 3 | the step on screen | the gauge in the chain, the reading | A02 (0:01–0:04) | have |
+| 4 | the result | worn cassette close on the bench | — | GAP |
 | 5 | CTA | end card in brand style | brand.md | have (text scene) |
 ```
 
@@ -51,18 +51,17 @@ Every `GAP` and `partial` row gets exactly one decision from the person before a
 ```
 GAP REPORT — <ID>
 
-Buildable now: yes, as a text-and-image cut (~30 s). With gap 3 filled it is a how-to with the step on screen.
+Buildable now: yes, as a text-and-image cut (~30 s). With gap 4 filled it is the full how-to with the worn teeth on screen.
 
-Gap 3 — the step on screen (must be real for a how-to)
-  A  placeholder frame    plain card "[PLACEHOLDER: screen recording of the marker dropping]"; renders now, swap later
-  B  text scene           the step as a designed card in brand colours (one idea, held to the floor); the video becomes a text-led how-to
+Gap 4 — the result (must be real for this how-to)
+  A  placeholder frame    plain card "[PLACEHOLDER: worn cassette close on the bench]"; renders now, swap later
+  B  text scene           the teeth and the rule as a designed card in brand colours (one idea, held to the floor); the video becomes a text-led how-to
   C  leave it out         drop the scene; I rewrite the one idea and the brief summary around what remains and show it again
-  D  provide it           shot list: 10–15 s screen recording of the controller, portrait, from the marker tap to the marker appearing; video stays `briefed` until it arrives
+  D  provide it           shot list: 5 s close of a worn cassette on the bench, 9:16, hands only, natural light; video stays `briefed` until it arrives
 
-Gap 4 — the result (partial: still, not motion)
-  A / B / C / D as above; recommended: B, the still with the caption as a text scene over it, because the result reads fine as a still.
+Recommended: D, because the hooked teeth are the point of the video.
 
-Say the decision per gap (e.g. "3 D, 4 B").
+Say the decision per gap (e.g. "4 D").
 ```
 
 | Decision | What it is | When it fits |
@@ -86,10 +85,10 @@ A shot list here is a request, not a plan for a shoot day. One row per missing s
 
 | Column | Example |
 |---|---|
-| For | V08 scene 3 |
-| What | the marker being dropped on the controller and appearing on the map |
-| Framing | screen recording, portrait, full screen; or over the shoulder with the screen filling two thirds of frame |
-| Length | 10–15 s, from the tap to the marker settled |
+| For | <ID> gap 4 |
+| What | worn cassette on the bench, close; hooked teeth visible |
+| Framing | hands only, natural light at the bench; the teeth fill most of frame |
+| Length | 5 s, settled on the worst tooth |
 | Orientation | 9:16 |
 | Who / consent | the owner's hands only |
 | Why it matters | without it the video is an explainer, not a how-to |

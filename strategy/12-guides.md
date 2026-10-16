@@ -1,6 +1,6 @@
 # The guides: how setup actually works
 
-Eleven guide skills fill the files in `businesses/<slug>/`, one each. They share one shape, written here once, because the method they follow is the one that produced the original `videos` repo's pillars and schedule between 2026-10-06 and 10-10, and that method was not an interview.
+Eleven guide skills fill the files in `businesses/<slug>/`, one each. They share one shape, written here once, because the method they follow is the one that produced the pillars and schedule of the business this repo was generalised from, and that method was not an interview.
 
 ## Where the shape comes from
 
@@ -28,7 +28,7 @@ Each prerequisite feeds the ones after it. The manifest (`lib/prerequisites.mjs`
 | 1 | business | `profile.md` | `define-business` | a URL or a paragraph | the one viewer, the facts worth collecting, the channels and the CTA all follow from what is offered and to whom |
 | 2 | audience | `audience.md` | `define-audience` | business | a pillar is defined by its viewer, an idea is a moment that viewer has lived, and channels are where that viewer already is |
 | 3 | facts | `facts.md` | `collect-facts` | business | ideas are only worth listing if they can be backed; nothing goes on screen that is not here; reading the site once for facts and voice saves reading it twice |
-| 4 | voice | `voice.md` | `business-voice` | business | a hook that does not sound like the business gets rewritten anyway; calibrate once |
+| 4 | voice | `voice.md` | `business-voice` | business | a hook that does not sound like the owner gets rewritten anyway; building the profile once from their own writing is cheaper than correcting every line |
 | 5 | channels | `channels.md` | `define-channels` | business, audience | an idea for a group and an idea for LinkedIn are different ideas; the calendar cannot set a cadence without knowing the channels |
 | 6 | ideas | `BACKLOG.md` | `seed-ideas` | audience, facts, channels | pillars are a sort of real ideas; the story behind an idea is a seed; which ideas need footage decides the calendar |
 | 7 | pillars | `pillars.md` | `define-pillars` | ideas, audience | the schedule picks by pillar share; a pillar with no ideas under it is a sign something is unclear |
@@ -45,7 +45,7 @@ How the order is used:
 - `setup-business` walks the list top down, skipping rows already `ready`, and before each guide says the `because` line.
 - A guide run out of order reads its `needs`. If one is `missing`, it says "I need audience first because pillars are defined by their viewer; shall we do audience now, or go on and mark the viewer `[Owner]`?" and does what the person says. If one is `draft`, it goes on and lists the open `[Owner]` items it is building on.
 - `readiness` lists missing items in manifest order, so "I still need…" is already the order to do them in, and prints the `because` for the first one only.
-- `collect-facts` and `business-voice` read the same material and are offered as one pass: "while I'm reading your site I can pull both the claims and how you write."
+- `collect-facts` and `business-voice` read the same material and are offered as one pass: "while I'm reading your site I can pull the claims, and keep the pages you wrote yourself as voice samples."
 
 ## The shape of a guide SKILL.md
 

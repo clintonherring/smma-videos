@@ -8,16 +8,16 @@ The rule that matters: **it cannot be boring text.** A wall of words on a flat b
 
 | Role | Shape | Example |
 |---|---|---|
-| **The hook** (when no footage of the moment exists) | one line, large, fast-in, the most generous hold in the video; one real visual behind or beside it if any exists | "Sunrise is in forty minutes." |
-| **A number** | the number as a counter or a slam, its unit small, one line of context | **20 ha** · one pilot · before the sun hits the ground |
-| **A rule or step** | step number small, the rule in one line, the condition in a second smaller line | 2 · Divide the height by ten, add two · *that's your speed in m/s* |
-| **A quote (the human line)** | pull-quote, the speaker named small; the line held longer than the floor | "Here. Not near here." — Anna, ground team |
-| **A comparison side** | the method's name, its ceiling, in a card that mirrors the other side | Hover and direct · fine to ~8 ha · costs the search past that |
-| **A list revealed one by one** | 2–4 items, sequential, each at the floor, then the full set held | three things she sees on her phone |
-| **The signature** (no camera) | the line, set as the brand would set a headline, with the logo small | "I search for nests, like you." |
-| **The CTA** | one line plus the destination; nothing else | Try it in Pilot 2 · opensar.eu |
+| **The hook** (when no footage of the moment exists) | one line, large, fast-in, the most generous hold in the video; one real visual behind or beside it if any exists | "Your chain is a wear item." (bike) / "The ovens are on." (bakery) |
+| **A number** | the number as a counter or a slam, its unit small, one line of context | **0.5 %** · 11-speed · cassette from €45 if you wait |
+| **A rule or step** | step number small, the rule in one line, the condition in a second smaller line | 1 · Photo the receipt the day you get it · *not Sunday night* (bookkeeper) |
+| **A quote (the human line)** | pull-quote, the speaker named small; the line held longer than the floor | "I checked it like in your video." — Mara |
+| **A comparison side** | the method's name, its limit, in a card that mirrors the other side | Crank the flow temp · warms the house · costs on old radiators (installer) |
+| **A list revealed one by one** | 2–4 items, sequential, each at the floor, then the full set held | measure · cut · fit · silicone bead (joiner) |
+| **The signature** (no camera) | the line, set as the brand would set a headline, with the logo small | "I find the leak. You keep the floor dry." (plumber) |
+| **The CTA** | one line plus the destination; nothing else | Book a Sunday check · northsidecycles.example |
 
-What it may not carry: a paragraph; two ideas; a claim not in `facts.md`; a slogan that fails the voice check; anything the viewer must read in less than the floor.
+What it may not carry: a paragraph; two ideas; a claim not in `facts.md`; a slogan that fails `business-voice` mode 2; anything the viewer must read in less than the floor.
 
 ## Design rules
 
@@ -37,12 +37,12 @@ What it may not carry: a paragraph; two ideas; a claim not in `facts.md`; a slog
 | Type | Text scene role | Default entrance |
 |---|---|---|
 | How-to | step cards as the frame around the step on screen; the centrepiece only when degraded | slide in from the step's side; hold; slide out |
-| Comparison | the two sides' ceilings, mirrored; the verdict line | split reveal; hard cut between sides |
+| Comparison | the two sides' limits, mirrored; the verdict line | split reveal; hard cut between sides |
 | Problem and fix | the cost (number) once; the limit once | slam for the number; fade for the limit |
 | Reveal | one line on what it means; nothing during the key action | fade, after the result settles |
 | Launch | the centrepiece: hook, name, 2–3 highlight cards, punchline | type-on or slam for the hook; cards slide sequentially |
 | Walkthrough | chapter titles; the day's numbers as lower thirds | clean wipe |
-| Origin | the abstract, once, held; chapter titles | slow fade, long hold |
+| Origin | the point, once, held; chapter titles | slow fade, long hold |
 | Story | the human line as a pull-quote; nothing else | fade in on the line, held past the floor |
 | Explainer | the real names and numbers as technical captions; one mechanism card at most | quiet, no motion beyond fade |
 | Invitation | "what you'd do" as a short list revealed one by one | soft slide |

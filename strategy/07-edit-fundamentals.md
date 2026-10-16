@@ -72,7 +72,7 @@ Pacing (beat count, hold length, transition vocabulary) is set per video type in
 
 Platforms grab **frame 0** as the idle thumbnail. Do not leave it to a fade, a black field, or mid-animation text.
 
-1. Pick the strongest **settled** moment (hook line fully in, or the result, or the thing at the spot).
+1. Pick the strongest **settled** moment (hook line fully in, or the result, or the worn part on the bench).
 2. Extract that frame as the poster (`npx smma-videos poster <video> <t>`).
 3. Bake it as frame 0 of the delivered file (pixels of frame 0 only; duration, frame count and audio unchanged). The same command does this.
 4. Keep the poster image alongside for platforms that accept a custom thumbnail.

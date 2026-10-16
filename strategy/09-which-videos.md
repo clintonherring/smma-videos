@@ -10,10 +10,10 @@ The planning unit. A pillar has one kind of viewer, one job, a share of what get
 
 | Pillar | For | What it is meant to do | Share | Working when | Backlog IDs (first sort) |
 |---|---|---|---|---|---|
-| e.g. **Field knowledge** | the peer | make the owner the one who knows; evergreen; safe to post in any group; the product is the tool in hand, never the subject | ~35 % | watch time and saves; guide-page visits; "I have the same problem" comments; a video still getting views a month later | V03, V04, V08 |
-| e.g. **The thing in use** | the peer, then anyone who has watched the problem happen | the product or service doing its job, shown | ~25 % | sign-ups, bookings; shares between peers | V02, V09, V15 |
-| e.g. **Help, not replace** | the people the business works alongside | earn the right to be in their groups | ~15 % | posted in groups without being removed; bookings; those people commenting, not objecting | V17, V19 |
-| e.g. **Why it exists** | people deciding | context and trust; long form and LinkedIn | ~10 % | decision-maker conversations; long-form completion past the limits chapter | V07, V11 |
+| e.g. **Workshop knowledge** | the peer | teach one check or one rule they can use before the expensive part is gone | ~40 % | the commuter group shares a video unprompted; a customer says "I checked it like in the video" | V01, V03, V04, V05 |
+| e.g. **Show the part** | the peer | show the worn part and the number, so "they upsell me" stops being what they believe | ~30 % | a comment or message that names the part; a booking that mentions the video | V02, V06, V08 |
+| e.g. **Come in** | the peer and the hesitant first-timer | make turning up feel easy: hours, prices on the wall, no judgement | ~20 % | Sunday checks counted; bookings with `?from=V##` | V07 |
+| e.g. **Why it exists** | people deciding | context and trust; long form and LinkedIn | ~10 % | decision-maker conversations; long-form completion past the limits chapter | none yet; long form in phase 3 |
 
 How pillars get written (`define-pillars`): **as a sort of the existing backlog**, not as categories invented in the abstract. The guide reads the seeded ideas, groups them by viewer and job, names the groups, and proposes shares and "working when" marked `[Owner]`. A pillar with no ideas under it is a sign the pillar or the concept is not clear yet.
 
@@ -30,7 +30,7 @@ The business's own rhythm decides what to make and when, better than a posting q
 
 | Slot | When | What is happening | What to make | What to publish |
 |---|---|---|---|---|
-| e.g. **Before** | the quiet months before the season | people plan and budget | evergreen how-tos from last year's material; group-facing videos; the signature-line library | knowledge and help-not-replace, so they are findable when people start looking |
+| e.g. **Before** | the quiet months before the season | people plan and budget | evergreen how-tos from last year's material; group-facing videos; the signature-line library | workshop knowledge and come-in shorts, so they are findable when people start looking |
 | e.g. **Peak** | the busy months | most work, least time | shoot, do not edit: the walkthrough day, stories, "one job, one number" | short stories cut quickly from the week's footage |
 | e.g. **After** | when the numbers exist | retrospectives | origin, offer, decision-maker cuts | long forms; LinkedIn |
 | **Cadence** (no season) | every week / fortnight | — | one short per slot, pillars alternating | — |
@@ -79,7 +79,7 @@ One or two recurring formats so the backlog has a spine and a viewer has a reaso
 |---|---|---|
 | **One job, one number** | one real job, one number on screen the whole video, and what decided it | knowledge |
 | **What it cost me** | before / after on one method or setting | knowledge, the thing in use |
-| **Who's got me today** | a different person each time; what they do, from the character's side | help, not replace |
+| **Sunday on the bench** | one real bike each week; what it needed, one number, in order | show the part |
 
 Rules: name the series in the caption, not in the hook; a series needs three episodes planned before the first goes out, or it is just a video; series names are proposals `[Owner]`.
 
@@ -90,7 +90,7 @@ Every brief says where the video goes and who shares it. Reach is borrowed in Ph
 | Channel | What goes there | How |
 |---|---|---|
 | Own channels | everything | default; poster and caption per `05-ctas-and-publishing.md` |
-| Groups and communities the viewer is already in `[Owner: which]` | knowledge; help-not-replace | organic where rules allow a video without a pitch; guide CTA, not product CTA |
+| Groups and communities the viewer is already in `[Owner: which]` | workshop knowledge; come-in where the rules allow | organic where rules allow a video without a pitch; guide CTA, not product CTA |
 | Direct to organisations and people the owner knows `[Owner: who]` | the thing in use; stories; the walkthrough | a message with the video, not a post; the person there shares it onward |
 | LinkedIn | why it exists; explainers for organisations; cuts under 3 min | one-line native caption; "talk to [owner]" |
 | Language cut | anything for a group in another language | subtitles always; a voiced character variant where one exists |

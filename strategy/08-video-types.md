@@ -9,16 +9,16 @@ A video is one type. If it wants to be two, it is two videos.
 | Type | What it is | Format, length | Body pattern | Default CTA |
 |---|---|---|---|---|
 | **How-to** | Teach one thing the viewer does; the product is the tool in hand | short 25–45 s; long if a whole guide | walk the steps / walk the number: state the rule, show it, show the result | guide CTA: "the full guide is at… ask me below" |
-| **Comparison** | Two ways of doing one job and what each costs | short 35–55 s | before/after or side by side; name each one's ceiling; land on the one you use and why | guide or product CTA, depending on whether the winner is a method or a feature |
-| **Problem and fix** | A moment the viewer has lived, then what closed it | short 40–55 s | pain you recognise → what it cost → the fix, shown → the payoff; one honest limit | product CTA |
+| **Comparison** | Two ways of doing one job and what each costs | short 35–55 s | before/after or side by side; name what each one cannot do; land on the one you use and why | guide or product CTA, depending on whether the winner is a method or a feature |
+| **Problem and fix** | A moment the viewer has lived, then what closed it | short 40–55 s | pain you recognise → what it cost → the fix, shown → the payoff; one limit | product CTA |
 | **Reveal** | A new capability or product shown doing its job for the first time | short 30–45 s | entry → key action → result; the thing appears after the signature | product CTA or "show someone who…" |
 | **Launch** | The share-first announcement: hook → reveal → 2–3 sharp highlights → punchline | short 15–30 s | text-forward; one real visual anchors it; designed for sharing | share or link CTA |
 | **Walkthrough** | One real job start to finish | long 5–15 min; 3–5 shorts planned first | chapters in time order; real numbers from the day | product CTA, then end card to the next video |
-| **Origin / why** | Why this exists, from the person who built it | long 4–9 min; cut under 3 min for LinkedIn | presence → for years I… → abstract → turn → what you get → limits → why I'm telling you | "try it on your next … and tell me what breaks" |
+| **Origin / why** | Why this exists, from the person who built it | long 4–9 min; cut under 3 min for LinkedIn | presence → for years I… → the point → turn → what you get → limits → why I'm telling you | "try it on your next … and tell me what breaks" |
 | **Story** | One real moment with a person in it, told in time order | short 30–55 s | the setup → the moment → one human line that carries the weight → what it means | share CTA |
 | **Explainer** | How one part of it works, for someone who will never use it themselves | short 40–60 s; LinkedIn cut | what you see → what is really happening (captions carry names and numbers) → why it matters to them | "show this to someone who…" / "talk to [owner]" |
 | **Invitation** | Ask one person to take part (book, visit, join, bring something) | short 30–45 s | what their first time looks like; what they would do; who they would be with; never price | "come and…" / "your [people] join from their phones" |
-| **Offer / pricing explainer** | The one video that explains what you pay and why | long only | the default (what is usually charged for) → the abstract → how we do it → tiers follow need → what each does not include → "both ways cost something" | "pick the one that matches what you do" |
+| **Offer / pricing explainer** | The one video that explains what you pay and why | long only | the default (what is usually charged for) → the point → how we do it → tiers follow need → what each does not include → what each way costs | "pick the one that matches what you do" |
 
 ## Each type in full
 
@@ -33,15 +33,15 @@ Each type has a **scene skeleton** (the storyboard template is pre-filled from i
 
 ### Comparison
 
-- **Skeleton:** hook, the room (3 s) · signature (3 s) · method A on screen with its ceiling (8–12 s) · method B on screen with its ceiling (8–12 s) · the one you use and why, one line (4 s) · CTA (4 s).
-- **Brief must settle:** the two methods by name; the cost of the old one in a number; the abstract the winner serves; whether the viewer should switch or understand.
+- **Skeleton:** hook, the default (3 s) · signature (3 s) · method A on screen with its limit (8–12 s) · method B on screen with its limit (8–12 s) · the one you use and why, one line (4 s) · CTA (4 s).
+- **Brief must settle:** the two methods by name; the cost of the old one in a number; the point the winner serves; whether the viewer should switch or understand.
 - **Must be real:** at least one side on screen; ideally both.
-- **Degrades to:** one side real, the other a text scene naming it and its ceiling (B). With neither, it is an explainer, not a comparison; change the type or provide the clip.
+- **Degrades to:** one side real, the other a text scene naming it and its limit (B). With neither, it is an explainer, not a comparison; change the type or provide the clip.
 
 ### Problem and fix
 
-- **Skeleton:** hook, the moment (3 s) · signature (3 s) · what it cost, a number (4 s) · the fix in use (12–18 s; entry → key action → result) · the payoff (4 s) · one honest limit (3 s) · CTA (4 s).
-- **Brief must settle:** the exact moment (not the topic); what it cost; the abstract; the fix shown, not described; the limit.
+- **Skeleton:** hook, the moment (3 s) · signature (3 s) · what it cost, a number (4 s) · the fix in use (12–18 s; entry → key action → result) · the payoff (4 s) · one limit (3 s) · CTA (4 s).
+- **Brief must settle:** the exact moment (not the topic); what it cost; the point; the fix shown, not described; the limit.
 - **Must be real:** the fix in use.
 - **Degrades to:** without a clip of the fix this is an explainer. The gap report says: keep the type and provide the clip, or change the type.
 
@@ -68,8 +68,8 @@ Each type has a **scene skeleton** (the storyboard template is pre-filled from i
 
 ### Origin / why
 
-- **Skeleton (long):** presence (5 s) · problem as my own past, three specifics (15 s) · abstract (5 s) · turn (5 s) · what you get, shown (20 s) · why I'm telling you (10 s) · hand-off · chapters: the day that broke it, what I tried, what I built, where it still falls short, what it costs (pointer to the offer video).
-- **Brief must settle:** real before-footage or an honest re-enactment; the abstract; the limits chapter.
+- **Skeleton (long):** presence (5 s) · problem as my own past, three specifics (15 s) · the point (5 s) · turn (5 s) · what you get, shown (20 s) · why I'm telling you (10 s) · hand-off · chapters: the day that broke it, what I tried, what I built, where it still falls short, what it costs (pointer to the offer video).
+- **Brief must settle:** real before-footage or an honest re-enactment; the point; the limits chapter.
 - **Must be real:** the person, on camera or in voice; something of the before (photos count).
 - **Degrades to:** a narrated version over stills and screens is acceptable; a text-only origin is not (change to an explainer).
 
@@ -96,7 +96,7 @@ Each type has a **scene skeleton** (the storyboard template is pre-filled from i
 
 ### Offer / pricing explainer
 
-- **Skeleton (long):** the default, what is usually charged for (15 s) · the abstract (5 s) · how we do it (20 s) · tiers follow need, one by one (sequential, held) · what each does not include and why · "both ways cost something" · CTA.
+- **Skeleton (long):** the default, what is usually charged for (15 s) · the point (5 s) · how we do it (20 s) · tiers follow need, one by one (sequential, held) · what each does not include and why · what each way costs · CTA.
 - **Brief must settle:** exact contents from the live price page; the principle behind the pricing. Never a short; never a hook or CTA elsewhere.
 - **Must be real:** the price page or the product itself at each tier.
 - **Degrades to:** text scenes per tier over the product on screen are the natural form here; a voice is required.

@@ -15,7 +15,7 @@ Plan long form so that shorts fall out of it; never the other way around.
 
 ### Short-form body patterns
 
-- **The room.** Most people do X → what it costs (a number) → the turn → what we use, shown. (`02-hooks.md`)
+- **The default.** Most people do X → what it costs (a number) → the turn → what we use, shown. (`02-hooks.md`)
 - **Before / after.** The old way on screen, then the new way on screen. Both real.
 - **Two screens.** The same thing appearing in two places (my screen, her phone) in the same second. Split screen or quick cut.
 - **Walk the number.** Show the inputs, state the rule, show the result.
@@ -65,8 +65,8 @@ When the speaker is a character, a junior, or anyone who should not carry the te
 
 | Layer | Carried by | Example |
 |---|---|---|
-| What is actually happening | lower-third captions in a plain technical style, screen recordings, a human's line | `Phone GPS 3 m off. RTK ±2 cm.` |
-| What the speaker thinks is happening | the speaker's voice; their captions in their colour | "Everyone can see me again. Good." |
+| What is actually happening | lower-third captions in a plain technical style, screen recordings, a human's line | `0.9 % stretch. Cassette teeth already reshaped.` |
+| What the speaker thinks is happening | the speaker's voice; their captions in their colour | "It just skips when I pull away. Annoying." |
 
 Technical captions use a fixed quiet style (small, bottom third, no animation) so they read as fact. The other layer uses the brand or character colour. Plan one moment per video where the layers touch.
 

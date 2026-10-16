@@ -10,7 +10,7 @@ The asks a business can make, and which fits where, are written in `channels.md`
 | The peer, in a group or community | Read the guide / ask me below | a guide page; the comments (never a product pitch in a group) |
 | The public | Show this to someone who [does the thing] | share |
 | Organisations and decision-makers | Talk to [owner] | the owner's contact, LinkedIn |
-| A specific local audience | Book a visit / a search / a call | the booking page |
+| A specific local audience | Book a visit / a slot / a call | the booking page |
 
 Rules:
 
@@ -30,13 +30,13 @@ First line repeats the hook. Second line is the signature. Then one or two sente
 <link or share ask>
 ```
 
-Example (a two-layer character video):
+Example (a how-to for the commuter group):
 
 ```
-The pilot found the nest. Then the people walked straight past it.
-I'm Rover. I help search for animals and nests.
-Here's how I get them to the exact spot.
-If you know someone who searches, show them this.
+Your chain is a wear item. Nobody told you, so here's the thirty-second check.
+I fix bikes for a living. Probably yours.
+Measure it with a gauge; at 0.5 % (11-speed) or 0.75 % (fewer gears) the chain is done. Change it on time and the cassette lasts about three chains instead of one.
+The full check is on the site. Ask me anything below.
 ```
 
 Floors inherited from the edit laws: 1–3 sentences after the signature, postable as-is, specific (no "excited to share", no "we are thrilled"), tone-matched to the video and the voice file. One canonical caption per video in `output/caption.txt`; platform variants, if needed, in a separate note.
