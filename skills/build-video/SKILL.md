@@ -17,7 +17,7 @@ References, read when the step needs them: [type-profiles.md](type-profiles.md) 
 
 1. `npx smma-videos readiness <slug>`: the build tier needs brand, assets and the render environment. If `brand.md` is `missing`, stop and run `define-brand`; a build with no brand looks like no one's. If the render environment fails, run `npx smma-videos doctor` and either fix per its hints or take the [fallback](fallback.md).
 2. The brief: status must be `approved` with **every gap decided** and no D outstanding (or the person explicitly says "build with the placeholder for now"). If not, hand back to `make-video`.
-3. Load `business-voice` (part 2) and `video-fundamentals`. Every caption and text-scene line is checked before it is set.
+3. Load `business-voice` (mode 2, the line check) and `video-fundamentals`. Every caption and text-scene line is checked before it is set.
 4. Hyperframes skills: run `npx hyperframes skills check`; if the core skills are not installed for this agent, `npx hyperframes skills update` and load `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative`, `hyperframes-cli` (and `media-use` for footage treatments). Do not enter the `hyperframes` intent interview or its promo workflows; this skill is the workflow. If the skills cannot be installed, `npx hyperframes docs data-attributes|gsap|compositions` plus the starter files here are enough for the patterns below.
 
 ## 1. Composition brief

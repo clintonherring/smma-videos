@@ -14,7 +14,7 @@ Hooks for Northside Cycle Repair. Rules in `strategy/02-hooks.md`. Each line is 
 - "Your chain is a wear item. Nobody told you, so here's the thirty-second check." (V03, chosen)
 - "A chain doesn't break. It stretches, quietly, until the cassette pays for it." (V04)
 
-### The room (most people do X; it costs them Y; we don't)
+### The default (most people do X; it costs them Y; we don't)
 
 - "Most people replace a cassette because nobody told them to replace the chain." (V03, alternate)
 

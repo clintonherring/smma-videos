@@ -20,7 +20,7 @@ Shared shape: `strategy/12-guides.md`. Method: `strategy/10-assets-and-gaps.md`.
 
 ## Questions (two or three assets a turn)
 
-- **What it shows.** "A04: a person at a gate at dawn with a phone; is that the volunteer arriving? Where, when?"
+- **What it shows.** "A02: the chain-wear gauge in the chain; is that the Sunday check setup? A04: the booking page on a phone; which screen, which offer?"
 - **May publish?** "Anyone in frame who hasn't agreed to be in a video? Any screen with customer data, a licence plate, a price that will change?" The answer is yes / no / with a crop or blur. No consent means it is not an asset yet.
 - **Could serve.** "Which ideas could this carry?" Propose IDs from `BACKLOG.md` by matching the moment to the idea; the owner confirms. Then update the backlog's `Assets` column: `have` when the type's must-be-real scene is covered, `partial` when something exists but not the right thing, `none` otherwise.
 - **Sources that are not files.** "Your product page, the FAQ, this paragraph you sent: shall I add them as sources (copy, facts, screenshots)?"

@@ -25,7 +25,7 @@ Check in this order. Each symptom points at one part of the structure; fix that 
 | Nobody finishes: completion drops in the first 3–6 s | The hook is about the product, not the viewer's moment, or the first frame is not the hook footage | Re-cut with an alternate hook from the brief (they were kept for this) |
 | Finishes, but no shares or saves | The CTA, or more than one ask | One ask, spoken and on screen in the last 5 s; match it to the channel |
 | Watches to the end but does not act | The product shows up too late, or a knowledge video is wearing a product CTA | Move the product shot earlier, or soften the CTA and let the action come from the next video |
-| Group members react badly | The peer line: wrong viewer, jargon, a hint of "replace" | Use the right signature variant; remove the pitch for group posts |
+| Group members react badly | The peer line: wrong viewer, jargon, a hint of selling | Use the right signature variant; remove the pitch for group posts |
 | Views stop within days, no second life | Not evergreen or not findable | Title with the question a viewer would type; publish evergreen rows in the slot before the season |
 | Text-scene video gets views, no reaction | Text scenes carried the whole video; nothing real was shown | Provide the shot the gap report asked for; rebuild with it |
 | Good numbers everywhere, nothing attributable | Measurement, not the video | Video-specific link in the caption; ask the next enquiry where they saw it |

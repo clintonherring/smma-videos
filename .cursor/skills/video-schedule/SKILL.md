@@ -23,7 +23,7 @@ Run `npx smma-videos readiness <slug>` first. The schedule tier needs business, 
 3. Infer and state: type (`strategy/08-video-types.md`), format, pillar (whose viewer is it written for), slot (does it need footage from a season or event, or do the assets exist), phase (eligible now or later), assets (`have` / `partial` / `none` from `ASSETS.md`), channel.
 4. If the idea carries a story or a number: add the story to `seeds.md` and the number to `facts.md` "Needs the owner"; say so.
 5. Append the row with status `idea`. If it is roadmap-gated, "On hold". If it is a second video in disguise, two rows and a "Natural pairs" note.
-6. Hand back: "V18 added: <line>. Reads as a problem-and-fix for the peer, pillar The thing in use, Peak slot (needs a clip of the fix), phase 1, assets partial. Want the picking rule on it now?"
+6. Hand back: "V09 added: <line>. Reads as a problem-and-fix for the peer, pillar Workshop knowledge, Cadence wk 1 (needs a clip of the noise on the stand), phase 1, assets partial. Want the picking rule on it now?"
 
 Never write more than the one line. The brief is written when the idea is picked.
 

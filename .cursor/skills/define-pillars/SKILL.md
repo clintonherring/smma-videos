@@ -34,7 +34,7 @@ Shared shape: `strategy/12-guides.md` ("ideas before pillars", "proposals carry 
 
 ## Refine by correction
 
-When the owner supplies a fact or a story that changes a pillar's job, rewrite that pillar and move the affected IDs; say "moved V07 and V11 from The thing in use to Why it exists because the viewer there is the person deciding, not the peer". When a pillar is struck, redistribute its IDs and say where each went.
+When the owner supplies a fact or a story that changes a pillar's job, rewrite that pillar and move the affected IDs; say "moved V06 from Show the part to Come in because the viewer there is the hesitant first-timer, not the commuter who already trusts the bench". When a pillar is struck, redistribute its IDs and say where each went.
 
 ## Finish
 

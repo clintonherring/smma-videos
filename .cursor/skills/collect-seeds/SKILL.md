@@ -22,7 +22,7 @@ Shared shape: `strategy/12-guides.md`. Method: `strategy/09-which-videos.md` §4
 - **Gaps.** "What do people in your niche never show: the cost, the mess, the decision, the failed attempt?" Rate each 1–10 for room and for how well placed the business is.
 - **Takes.** "What do you believe about this work that most people in it would argue with? What number or moment backs it?" A take without backing is an opinion; write the backing or mark `[Owner]`.
 - **Stories.** "Tell me about a morning this actually happened." Two sentences in their words: what happened, the lesson. Then: "Is there footage, a photo, or would you tell it to camera?" (Feeds the asset map later.)
-- **Series.** "Is there a shape you could repeat ten times: one job one number; what it cost me; who's got me today?" A series needs three episodes planned before the first goes out; name three IDs or it is a candidate only.
+- **Series.** "Is there a shape you could repeat ten times: one job one number; what it cost me; Sunday on the bench?" A series needs three episodes planned before the first goes out; name three IDs or it is a candidate only.
 
 ## Write the file
 

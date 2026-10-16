@@ -8,7 +8,7 @@ The shape of a run on `businesses/example-business` (Northside Cycle Repair, a f
 
 ## Readiness (agent, silently)
 
-`npx smma-videos readiness example-business` → brief tier ready; build tier ready. Loads `business-voice` part 2.
+`npx smma-videos readiness example-business` → brief tier ready; build tier ready. Loads `business-voice` mode 2.
 
 ## Intake (agent, silently)
 
@@ -37,10 +37,10 @@ BRIEF SUMMARY — V03 Check your chain before it costs you a cassette
 
 Type · Viewer                how-to · the daily commuter who has never measured a chain
 One idea                     A chain is a wear item: measure it, replace it at 0.5 %, and the cassette lasts three chains instead of one.
-Room                         none: opens from the viewer's moment
+Default                      none: opens from the viewer's moment
 Feeling                      Capable: "I can check this on Sunday in thirty seconds."
 Hook (chosen)                "Your chain is a wear item. Nobody told you, so here's the thirty-second check." — first frame: A02 chain checker dropping into the chain
-  alternates                 "Most people replace a cassette because nobody told them to replace the chain." (room) / "Thirty seconds on a Sunday saves you about forty-five euros." (viewer's moment)
+  alternates                 "Most people replace a cassette because nobody told them to replace the chain." (default) / "Thirty seconds on a Sunday saves you about forty-five euros." (viewer's moment)
 Signature                    "I fix bikes for a living. Probably yours." (voice.md canonical)
 CTA (one ask)                "The full check is on the site. Ask me anything below." → northsidecycles.example/guides/chain-wear
 Format · est. length         short 9:16 · ~35 s

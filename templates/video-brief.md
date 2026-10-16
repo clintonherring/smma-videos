@@ -11,10 +11,10 @@ BRIEF SUMMARY — <ID> <title>
 
 Type · Viewer                <type from strategy/08-video-types.md> · <the one person watching>
 One idea                     <one sentence>
-Room                         most people <default> (or: for years I <default>) · costs them <number> · after: <abstract> · we <the turn>   (or "none: opens from the viewer's moment")
+Default                      most people <default> (or: for years I <default>) · costs them <number> · the point: <one sentence> · we <the turn>   (or "none: opens from the viewer's moment")
 Feeling                      <how the viewer should feel at the end>
 Hook (chosen)                "<line>" — first frame: <asset ID or GAP>
-  alternates                 "<line 2>" / "<line 3>"   (one room hook and one viewer's-moment hook among them)
+  alternates                 "<line 2>" / "<line 3>"   (one default hook and one viewer's-moment hook among them)
 Signature                    "<canonical or variant from voice.md>"
 CTA (one ask)                "<line>" → <where it points>
 Format · est. length         short 9:16 · ~NN s   (or long 16:9 · N–N min)

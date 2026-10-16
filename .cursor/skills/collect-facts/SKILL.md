@@ -21,8 +21,8 @@ Shared shape and rules: `strategy/12-guides.md`. Grounding law: `strategy/07-edi
 ## Questions (two or three a turn)
 
 - **Limits.** "What does it not do, that people sometimes expect? Which of those are you willing to say on camera?" A stated limit is a trust move; get at least three.
-- **Conditions on numbers.** For each headline number: "Always, or under what conditions?" Write the condition into the row ("about 90 minutes, before the sun hits the grass").
-- **Roles.** "When it's in use, who does what? Is there anyone who must never be shown doing X?" (The original method had a hard rule: the pilot never controls the robot.)
+- **Conditions on numbers.** For each headline number: "Always, or under what conditions?" Write the condition into the row ("about 90 minutes, if the parts are in stock" for a repair; "Sundays 10:00–13:00, one bike per visit" for a check offer).
+- **Roles.** "When it's in use, who does what? Is there anyone who must never be shown doing X?" (e.g. the bookkeeper never signs on the client's behalf; the apprentice never quotes a price on camera without the owner.)
 - **Roadmap.** "What is promised or in progress but not live yet?" Those rows go under "Not yet"; videos about them are briefed and held, never built.
 - **Claims about others.** If any idea compares to how others do it: "Can you stand behind that number about other people's way?" If not, it is not a fact.
 

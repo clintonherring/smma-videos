@@ -20,9 +20,9 @@ Transition →:       <from the type profile: cut / match cut / slide / fade / w
 
 **How-to** · hook, the viewer's moment 3 s · signature 3 s · the rule or step stated 4 s · the step done on screen 10–20 s (sequential sub-steps) · the result 4 s · CTA 4 s
 
-**Comparison** · hook, the room 3 s · signature 3 s · method A on screen + its ceiling 8–12 s · method B on screen + its ceiling 8–12 s · the one you use and why 4 s · CTA 4 s
+**Comparison** · hook, the default 3 s · signature 3 s · method A on screen + its limit 8–12 s · method B on screen + its limit 8–12 s · the one you use and why 4 s · CTA 4 s
 
-**Problem and fix** · hook, the moment 3 s · signature 3 s · what it cost, a number 4 s · the fix in use 12–18 s (entry → key action → result) · the payoff 4 s · one honest limit 3 s · CTA 4 s
+**Problem and fix** · hook, the moment 3 s · signature 3 s · what it cost, a number 4 s · the fix in use 12–18 s (entry → key action → result) · the payoff 4 s · one limit 3 s · CTA 4 s
 
 **Reveal** · hook, the before or the question 3 s · signature 3 s · entry 3 s · key action 6–10 s · result 5 s · one line on what it means 3 s · CTA 4 s
 
@@ -36,9 +36,9 @@ Transition →:       <from the type profile: cut / match cut / slide / fade / w
 
 **Walkthrough (long)** · cold open from the body 10 s · signature 3 s · what you get 15 s · chapters in time order (each: the moment, the decision, the number) · CTA · end card. List the 3–5 shorts planned from it, each with its own type.
 
-**Origin / why (long)** · presence 5 s · problem as my own past, three specifics 15 s · abstract 5 s · turn 5 s · what you get, shown 20 s · why I'm telling you 10 s · hand-off · chapters: the day that broke it, what I tried, what I built, where it still falls short, what it costs
+**Origin / why (long)** · presence 5 s · problem as my own past, three specifics 15 s · the point 5 s · turn 5 s · what you get, shown 20 s · why I'm telling you 10 s · hand-off · chapters: the day that broke it, what I tried, what I built, where it still falls short, what it costs
 
-**Offer / pricing explainer (long)** · the default 15 s · the abstract 5 s · how we do it 20 s · tiers follow need, sequential and held · what each does not include · "both ways cost something" · CTA
+**Offer / pricing explainer (long)** · the default 15 s · the point 5 s · how we do it 20 s · tiers follow need, sequential and held · what each does not include · what each way costs · CTA
 
 ## Totals
 

@@ -12,7 +12,7 @@ Hooks for this business. Rules in `strategy/02-hooks.md`. Each line is about the
 
 - 
 
-### The room (most people do X; it costs them Y; we don't)
+### The default (most people do X; it costs them Y; we don't)
 
 - 
 

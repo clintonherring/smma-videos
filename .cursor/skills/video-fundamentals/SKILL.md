@@ -19,8 +19,8 @@ Read and follow `strategy/07-edit-fundamentals.md` (the edit), `strategy/06-deli
 8. **Ground every claim.** Names, numbers, prices, capabilities and limits come from `facts.md` or were measured on the day; each carries its limit when the facts file gives one. Tone may invent; claims may not.
 9. **Assets before words.** Every scene names the asset it plays or the gap decision (A placeholder, B text scene, C left out with the summary redone, D owner provides). A must-be-real scene for the type cannot take B without the brief saying what the video became.
 10. **Text scenes carry one idea.** Brand colours and fonts, one line plus at most two small lines, at the floor, entrance from the type profile. It cannot be boring text; it also cannot be a paragraph.
-11. **Coffee-shop check on every spoken line.** If it would feel odd said to a friend across a table, rewrite. Relaxed "three things" energy, not a presenter.
-12. **Voice check on every line** with `business-voice` part 2: their words, condition and limit where there is one, number hedged as the facts file hedges it, no slogan, the signature in their register.
+11. **Out-loud test on every spoken line.** Would the speaker say this to one customer across the counter? If not, rewrite. A person talking, not a presenter.
+12. **Voice check on every line** with `business-voice` mode 2: each line against `voice.md` "Patterns to copy" and "Words and shapes to avoid"; their phrases kept; numbers said the way they say numbers; no slogan; the signature as written there.
 13. **One CTA**, from `channels.md` for the channel the video goes to first (`strategy/05-ctas-and-publishing.md`). Invitations do not sell; offers do not hook.
 
 ## When reviewing a brief, storyboard, take or cut

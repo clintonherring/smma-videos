@@ -12,10 +12,10 @@ Read only what the step needs. Business files are under `businesses/<slug>/`.
 | Vet: type | `strategy/08-video-types.md` (the table, "Inferring the type", each type's "brief must settle" and "must be real") |
 | Vet: viewer, feeling | `audience.md`; `strategy/01-audience-and-voice.md`; `strategy/06-delivery-and-narration.md` "One feeling per video" |
 | Vet: who speaks | `voice.md` "Who speaks"; `strategy/06-delivery-and-narration.md` (narration, captions only, characters) |
-| Summary: hook, room, abstract | `strategy/02-hooks.md`; `hooks.md` (the bank); `seeds.md` (moments, gaps, takes, stories) |
+| Summary: hook, the default, the point | `strategy/02-hooks.md`; `hooks.md` (the bank); `seeds.md` (moments, gaps, takes, stories) |
 | Summary: signature, bridge | `voice.md` "Signature line"; `strategy/03-signature.md` |
 | Summary: CTA, channel | `channels.md` ("CTA per channel"); `strategy/05-ctas-and-publishing.md` |
-| Any line anyone says or reads | `voice.md` "Check before handing a line back" via `business-voice` part 2 |
+| Any line anyone says or reads | `voice.md` "Patterns to copy", "Their phrases", "Words and shapes to avoid", "Rewrite examples" via `business-voice` mode 2 |
 | Asset map, gap report | `templates/asset-map.md`; `strategy/10-assets-and-gaps.md`; the type's "must be real" and "degrades to" in `08-video-types.md` |
 | Produce: storyboard | `templates/storyboard.md` (skeleton per type); `strategy/04-formats.md`; `strategy/07-edit-fundamentals.md` (reading floor, flow, sequential moments, poster) |
 | Produce: text scenes | `strategy/11-text-scenes.md`; `brand.md` |

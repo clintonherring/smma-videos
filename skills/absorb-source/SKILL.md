@@ -7,7 +7,7 @@ description: Evaluates outside material the person points at (a talk transcript,
 
 Nothing from outside is adopted wholesale. It is read, split into layers, each layer judged against the method and the business, and only the kept parts are wired in, with a note that says where they went so the decision can be revisited.
 
-This move built the original method: a launch-video skill was absorbed for its edit laws and pipeline, a social-media-manager repo for its pillars and phases (and not its reply farming), a speaking-to-camera talk for the coffee shop rule, and a founder's channel opening for the room framing. Each left a note; the notes are in `reference/` of this repo and the `videos` repo it came from.
+This move built the original method: a launch-video skill was absorbed for its edit laws and pipeline, a social-media-manager repo for its pillars and phases (and not its reply farming), a speaking-to-camera talk for the out-loud delivery check, a founder's channel opening for the default-and-its-cost hook, and a resume-writing repo for the voice profile. Each left a note; the notes are in `reference/`.
 
 ## 1. Read it properly
 
@@ -79,7 +79,7 @@ What it is: <one paragraph; who, what, when, link>
 ## 6. Finish
 
 - If the absorption touched a prerequisite file, run `npx smma-videos readiness <slug>`.
-- Offer the one thing the source makes possible now ("with the coffee shop rule in delivery, the next brief gets a delivery check").
+- Offer the one thing the source makes possible now ("with the out-loud check in delivery, the next brief gets a delivery check").
 
 ## Rules
 

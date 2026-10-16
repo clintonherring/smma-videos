@@ -29,7 +29,7 @@ Both are **sub-compositions**: a timed `<div>` in `index.html` with `data-compos
 - `data-composition-id` must be unique per mount; the sub-composition's own id (`text-scene`, `placeholder`) is internal.
 - Variables are declared in `data-composition-variables` on the sub-composition's `<html>` and read with `window.__hyperframes.getVariables()`. Unset variables take the defaults.
 - `data-duration` on the mount wins over the sub-composition's own `data-duration`. The sub-composition's GSAP timeline is registered on `window.__timelines["text-scene"]` and runs from the mount's start.
-- JSON inside a single-quoted attribute: use `&apos;` for an apostrophe in a line (`"line":"Here. Not near here. That&apos;s the rule."`), or `&quot;` for quotation marks.
+- JSON inside a single-quoted attribute: use `&apos;` for an apostrophe in a line (`"line":"Check it before it&apos;s a problem."`), or `&quot;` for quotation marks.
 
 ## text-scene.html variables
 
@@ -63,7 +63,7 @@ The exit is a timeline tween in `index.html` on the mount element (`opacity` or 
 From `strategy/11-text-scenes.md` "Per type" and `type-profiles.md`. Short form:
 
 - **How-to**: step cards as the frame around the real step (kicker = step number, `slide`), out again before the hands move. Centrepiece only when the step footage is missing (degraded; the brief says so).
-- **Comparison**: two mirrored cards (name in `kicker`, ceiling in `line`), hard cut between them; the verdict as `slam`.
+- **Comparison**: two mirrored cards (name in `kicker`, limit in `line`), hard cut between them; the verdict as `slam`.
 - **Problem and fix**: the cost as a number card (`slam`, unit in `support`); the limit as `fade`. Never over the key action.
 - **Reveal**: one `fade` card after the result settles.
 - **Launch**: the centrepiece; hook `type` or `slam` and held longest; 2–3 highlight cards `slide` in sequence; punchline card.
@@ -80,7 +80,7 @@ A card on a still or on a blurred frame from the next clip beats a card on flat 
 <img class="clip" data-start="8" data-duration="3" src="assets/A03.jpg" style="filter: blur(6px) brightness(0.55);">
 <div class="clip" data-start="8" data-duration="3" data-composition-id="ts2"
      data-composition-src="compositions/text-scene.html"
-     data-variable-values='{"line":"Here. Not near here.","support":"Anna, ground team","bg":"rgba(0,0,0,0)","fg":"#ffffff","accent":"#e8a33d","entrance":"fade"}'></div>
+     data-variable-values='{"line":"Twelve-speed chains wear faster.","support":"Jonas, Northside Cycle Repair","bg":"rgba(0,0,0,0)","fg":"#ffffff","accent":"#e8a33d","entrance":"fade"}'></div>
 ```
 
 `check` measures contrast against what is actually behind the text; the dimmed still is what makes it pass. If it fails, darken the still further or revert to the brand background. Flat colour is fine for the signature and CTA.

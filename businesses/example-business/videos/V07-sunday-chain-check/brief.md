@@ -9,7 +9,7 @@ BRIEF SUMMARY — V07 Sunday chain checks
 
 Type · Viewer                launch · Mara, who has a bike that "probably needs looking at" and has never been in
 One idea                     From 4 October, a chain check is free with any service on Sunday mornings; you see the number, you keep the cassette.
-Room                         none: a date and an offer
+Default                      none: a date and an offer
 Feeling                      Welcome: "I can just turn up with it."
 Hook (chosen)                "Sunday chain checks. Free with any service." — first frame: the hook card (type-on), no footage of a Sunday exists yet
   alternates                 "What happens if I just turn up on a Sunday?" (question)

@@ -22,7 +22,7 @@ Nothing after step 4 is produced until the person approves the summary **and** e
 - `blocked`: show the output, name the next guide and its reason, offer to run it. Then, if the person wants to go on anyway, go on with the gaps marked `[Owner]` in the summary; say what that costs (no facts file means every claim is "to confirm").
 - `draft`: go on; list the open `[Owner]` items the brief will rest on.
 
-Load `business-voice` (part 2, the line check) now; every line below passes it.
+Load `business-voice` (mode 2, the line check) now; every line below passes it.
 
 ## 2. Intake
 
@@ -45,7 +45,7 @@ State what you inferred and why; ask only what you cannot infer. Two or three qu
 | Format and length | the type's default | the idea might carry long form |
 | Feeling at the end | rarely inferable; `audience.md` gives the default per kind | almost always; say "not enough to call the feeling" rather than guess |
 | Hook direction | the viewer's moment in the idea; `seeds.md` | the idea is about the product |
-| The room and the abstract (`strategy/02-hooks.md`) | the default the idea departs from and its cost from `facts.md` | the cost has no number; the viewer might be in the room |
+| The default and the point (`strategy/02-hooks.md`) | the default the idea departs from and its cost from `facts.md` | the cost has no number; the viewer might be the one doing the default |
 | Signature | `voice.md` per viewer | a second viewer |
 | CTA | `channels.md` per primary channel | knowledge vs product video is unclear |
 | Who speaks | `voice.md` "Who speaks" | the footage has no voice and the type wants one |
@@ -58,7 +58,7 @@ Offer a reading when you ask: "This reads as a comparison (the old way vs yours)
 
 Present these three blocks in this order, then stop and wait.
 
-**Brief summary** (`templates/video-brief.md`, the block): Type · Viewer, One idea, Room, Feeling, Hook (chosen) with first frame named by asset ID or GAP, alternates (one room hook, one viewer's-moment hook), Signature, CTA → where, Format · est. length, Who speaks, Why now (pillar · slot · phase · channel · assets), Facts to confirm, Still open. Every line filled or explicitly open. Hooks are sentences the speaker would say, with a specific, passing the voice check.
+**Brief summary** (`templates/video-brief.md`, the block): Type · Viewer, One idea, Default, Feeling, Hook (chosen) with first frame named by asset ID or GAP, alternates (one default hook, one viewer's-moment hook), Signature, CTA → where, Format · est. length, Who speaks, Why now (pillar · slot · phase · channel · assets), Facts to confirm, Still open. Every line filled or explicitly open. Hooks are sentences the speaker would say, with a specific, passing the voice check.
 
 **Asset map** (`templates/asset-map.md`): one row per scene of the type's skeleton, `Needs`, `Have` (asset ID and in/out), status `have` / `partial` / `GAP`. Then "Must be real for a <type>: scenes …" and "Buildable now: …" (`strategy/10-assets-and-gaps.md`).
 

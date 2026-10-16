@@ -19,9 +19,9 @@ One `<type>` short (or long) for `<business>`, built from the approved brief at 
 
 | Asset | File | Use | In / out | Treatment |
 |---|---|---|---|---|
-| A04 | `assets/clips/gate-dawn.mp4` | scene 1 hook | 0:12–0:19 | as shot; caption bottom third |
-| A01 | `assets/clips/signature-bench.mp4` | scene 2 | 0:00–0:03 | as shot |
-| A07 | `assets/images/phone-marker.jpg` | scene 4 result | still | slow push-in 4 s |
+| A02 | `assets/clips/chain-checker.mp4` | scene 1 hook | 0:00–0:04 | as shot; caption bottom third |
+| A01 | `assets/clips/bench-signature.mp4` | scene 2 | 0:00–0:03 | as shot |
+| A04 | `assets/images/screenshot-booking-page.png` | scene 6 CTA | still | slow push-in 3 s |
 | — | brand.md | end card | | text scene |
 
 Copy that must appear verbatim (from `facts.md` / `voice.md`): `<lines>`.
@@ -56,8 +56,8 @@ Scene list from `brief.md` "Storyboard", each with duration, on-screen asset or 
 
 | Scene | Decision | How it is built |
 |---|---|---|
-| 3 | B text scene | step card: "2 · Divide the height by ten, add two" · slide in from the right, hold 2.4 s, slide out |
-| 4 | A placeholder | grey card `[PLACEHOLDER: her phone showing the marker]` 4 s; must not reach a published cut |
+| 3 | B text scene | step card: "1 · 0.5 % on an 11-speed. 0.75 % on fewer gears." · slide in from the right, hold 2.4 s, slide out |
+| 4 | A placeholder | grey card `[PLACEHOLDER: the gauge in the chain]` 4 s; must not reach a published cut |
 
 ## Reading floor
 
