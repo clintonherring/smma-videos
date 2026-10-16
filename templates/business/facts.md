@@ -5,7 +5,7 @@ Filled by `collect-facts`. Needs `profile.md` and the source material (site, doc
 
 ## Claims
 
-One row per thing a video may say. Numbers carry their condition ("about", "up to", "depending on"). Each claim names its limit.
+One row per thing a video may say. Numbers carry the condition under which they hold (a size, a season, a setting, "if the parts are in stock"). Each claim names its limit. How the number is then *said* comes from `voice.md`, not from here.
 
 | # | Claim | Source | Limit / condition | Used in |
 |---|---|---|---|---|

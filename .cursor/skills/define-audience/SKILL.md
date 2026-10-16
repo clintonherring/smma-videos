@@ -24,7 +24,7 @@ Shared shape and rules: `strategy/12-guides.md`. Method: `strategy/01-audience-a
 - **What they believe.** "What do they think the problem is? What have they tried? What's the objection they'd say across a table?"
 - **The feeling.** "When a video of yours ends, how should they feel: capable, recognised, relieved, curious, invited, something else?" One per kind of video if it differs.
 - **What they'd never forgive.** "Would explaining [term] insult them, or do they need it explained? What tone makes them switch off?"
-- **A second viewer?** "Is there a second person worth their own videos: the buyer vs the user, the volunteer vs the organisation, the parent vs the child?" If yes, one paragraph each for the sections above, and a second ID letter for the backlog (`V##` and e.g. `O##`).
+- **A second viewer?** "Is there a second person worth their own videos: the buyer vs the user, the tenant vs the landlord, the parent vs the child?" If yes, one paragraph each for the sections above, and a second ID letter for the backlog (`V##` and e.g. `O##`).
 
 ## Write the file
 

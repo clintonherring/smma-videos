@@ -29,7 +29,7 @@ Filled by `define-audience`. Needs `profile.md`. Feeds channels, ideas, pillars 
 
 ## A second viewer?
 
-[Owner] Is there a second person worth a second track (the buyer vs the user; the volunteer vs the organisation)? If yes, repeat the sections above for them in one paragraph each. If no, say so.
+[Owner] Is there a second person worth a second track (the buyer vs the user; the tenant vs the landlord)? If yes, repeat the sections above for them in one paragraph each. If no, say so.
 
 ## Needs the owner
 
