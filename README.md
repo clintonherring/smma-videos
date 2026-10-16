@@ -2,7 +2,7 @@
 
 A set of agent skills that take a business from "I should be posting videos" to a posting schedule and rendered videos, built from whatever the business already has: a website, some text, photos, clips, screen recordings.
 
-It works the way the OpenSAR `videos` repo works (one viewer, one idea, one CTA, pillars and a calendar, a brief that stops for approval) and renders the way `brag` renders (plan → storyboard → Hyperframes composition → check → render → poster baked as frame 0 → caption). The missing piece in both, and the point of this repo, is the **gap protocol**: when the business does not have a shot the video needs, the agent says so before building and lets the person choose a placeholder, a designed text scene, dropping the scene and reworking the idea, or providing the shot.
+It plans the way a working one-business video repo plans (one viewer, one idea, one CTA, pillars and a calendar, a brief that stops for approval) and renders the way `brag` renders (plan → storyboard → Hyperframes composition → check → render → poster baked as frame 0 → caption). The missing piece in both, and the point of this repo, is the **gap protocol**: when the business does not have a shot the video needs, the agent says so before building and lets the person choose a placeholder, a designed text scene, dropping the scene and reworking the idea, or providing the shot.
 
 ## What you get
 
@@ -52,6 +52,8 @@ Inside a clone, the same commands run as `npx smma-videos <command>` or `npm run
 | `readiness <slug>` | Rebuild `READINESS.md` and print what is still needed, in order, with the reason for the next one. |
 | `inventory <slug>` | Probe `businesses/<slug>/assets/` with ffprobe and write rows into `assets/ASSETS.md`. |
 | `poster <video.mp4> <seconds>` | Extract the settled frame at that time as `<video>.jpg` and bake it as frame 0 (duration and audio unchanged). |
+| `voice-profile <sample> [...] [--top N]` | Statistical profile of the owner's own writing (sentence length, first person, numbers, verbs, recurring phrases, hedges, marketing words) to confirm what `business-voice` read in the samples. |
+| `extract-text <file-or-url>` | Plain text from a `.docx`, `.pdf`, `.html` or URL, for voice samples and facts. |
 | `install --agent <cursor\|claude\|codex\|opencode\|all>` | Copy `skills/` into that agent's project discovery directory. |
 | `order [<id>]` | Print the prerequisite order with the reason for each step, or one step's upstream / downstream block. |
 
@@ -80,7 +82,7 @@ Each prerequisite feeds the ones after it. `readiness` lists what is missing in 
 | 1 | business | `profile.md` | `define-business` | The viewer, the facts worth collecting, the channels and the CTA all follow from the offer |
 | 2 | audience | `audience.md` | `define-audience` | A pillar is defined by its viewer; an idea is a moment that viewer has lived |
 | 3 | facts | `facts.md` | `collect-facts` | Ideas are only worth listing if they can be backed; nothing goes on screen that is not here |
-| 4 | voice | `voice.md` | `business-voice` | Same source material as facts; calibrating once beats correcting every line |
+| 4 | voice | `voice.md` | `business-voice` | Built from the owner's own writing (same material as facts); a profile built once beats correcting every line |
 | 5 | channels | `channels.md` | `define-channels` | A group video and a LinkedIn video are different ideas; cadence comes from here |
 | 6 | ideas | `BACKLOG.md` | `seed-ideas` | Pillars are a sort of real ideas, not categories invented in the abstract |
 | 7 | pillars | `pillars.md` | `define-pillars` | The schedule picks by pillar share |

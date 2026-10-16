@@ -15,6 +15,10 @@ Usage
   npx smma-videos install --agent cursor|claude|codex|opencode|all
                                                   copy skills/ into that agent's project skill directory
   npx smma-videos order [<id>]                    print the prerequisite order with the reason for each (or one row's Upstream / Downstream block)
+  npx smma-videos voice-profile <sample> [...] [--top N]
+                                                  statistical read of the business's own writing (sentence length, verbs, phrases,
+                                                  hedges, marketing-speak) to confirm what you read before writing voice.md
+  npx smma-videos extract-text <file-or-url>      plain text of a sample: .txt .md .html .docx, a URL, or .pdf via pdftotext
 
 Outside a clone, use: npx github:clintonherring/smma-videos <command>
 `;
@@ -27,7 +31,7 @@ function parse(argv) {
     if (a.startsWith("--")) {
       const [k, v] = a.slice(2).split("=");
       if (v !== undefined) flags[k] = v;
-      else if (argv[i + 1] && !argv[i + 1].startsWith("--") && ["agent", "out", "poster-out", "root"].includes(k)) flags[k] = argv[++i];
+      else if (argv[i + 1] && !argv[i + 1].startsWith("--") && ["agent", "out", "poster-out", "root", "top"].includes(k)) flags[k] = argv[++i];
       else flags[k] = true;
     } else args.push(a);
   }
@@ -74,6 +78,14 @@ async function main() {
       const { PREREQUISITES, upstreamDownstream } = await import("../lib/prerequisites.mjs");
       if (rest[0]) return upstreamDownstream(rest[0]);
       return PREREQUISITES.map((p, i) => `${String(i + 1).padStart(2)}. ${p.label.padEnd(19)} ${(p.file || "(doctor)").padEnd(17)} ${p.guide.padEnd(17)} [${p.tier}]\n    because ${p.because}`).join("\n");
+    }
+    case "voice-profile": {
+      const { runVoiceProfile } = await import("../lib/voice.mjs");
+      return runVoiceProfile(rest, { top: flags.top ? Number(flags.top) : 15 });
+    }
+    case "extract-text": {
+      const { runExtractText } = await import("../lib/voice.mjs");
+      return runExtractText(rest[0]);
     }
     default:
       process.exitCode = 2;

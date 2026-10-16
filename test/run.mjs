@@ -153,6 +153,26 @@ test("skills: every SKILL.md under 500 lines with name + description frontmatter
   }
 });
 
+test("voice: sentences split, profile reports phrases and marketing words, extract-text strips html", async () => {
+  const { sentences, profile, extractText } = await import("../lib/voice.mjs");
+  assert.deepEqual(sentences("# Heading\n\nThe chain is done. The cassette is fine. Lucky."), ["The chain is done.", "The cassette is fine."]);
+  const text = "I'll put the gauge on it. I'll put the gauge on it while you wait! Our seamless premium service is about 40 minutes.";
+  const out = profile([text], 5);
+  assert.match(out, /Samples: 1 file\(s\), 3 sentences/);
+  assert.match(out, /"put the gauge" \(2\)/);
+  assert.match(out, /seamless \(1\), premium \(1\)/);
+  assert.match(out, /about \(1\)/);
+  assert.match(out, /Exclamation marks: 1$/m);
+  const root = tmp();
+  const html = path.join(root, "page.html");
+  writeFileSync(html, "<html><head><title>x</title><style>p{}</style></head><body><h1>Prices</h1><p>Chain from &euro;25, fitted.</p></body></html>");
+  const plain = await extractText(html);
+  assert.ok(plain.includes("Chain from €25, fitted.") && !plain.includes("<p>") && !plain.includes("p{}"), plain);
+  const samples = readdirSync(path.join(packageRoot, "businesses", "example-business", "voice-samples"));
+  assert.ok(samples.length >= 3, "example business keeps at least three voice samples");
+  rmSync(root, { recursive: true, force: true });
+});
+
 test("example business: every tier ready; one [Owner] left in brand.md makes only the build tier draft", () => {
   const src = path.join(packageRoot, "businesses", "example-business");
   if (!existsSync(src)) return;
