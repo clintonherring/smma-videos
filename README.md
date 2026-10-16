@@ -53,6 +53,9 @@ Inside a clone, the same commands run as `npx smma-videos <command>` or `npm run
 | `inventory <slug>` | Probe `businesses/<slug>/assets/` with ffprobe and write rows into `assets/ASSETS.md`. |
 | `poster <video.mp4> <seconds>` | Extract the settled frame at that time as `<video>.jpg` and bake it as frame 0 (duration and audio unchanged). |
 | `install --agent <cursor\|claude\|codex\|opencode\|all>` | Copy `skills/` into that agent's project discovery directory. |
+| `order [<id>]` | Print the prerequisite order with the reason for each step, or one step's upstream / downstream block. |
+
+`npm test` runs the test suite (`test/run.mjs`, plain Node, no dependencies).
 
 ## How it flows
 
