@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+  smma-videos text scene (gap decision B, frame cards, signature and CTA cards).
+  Mount from index.html:
+    <div class="clip" data-start="3" data-duration="3" data-composition-id="ts1"
+         data-composition-src="compositions/text-scene.html"
+         data-variable-values='{"line":"Measure it. Replace at 0.5 %.","support":"Past 0.75 % the cassette goes with it.",
+                                "kicker":"2","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"slide","align":"left"}'></div>
+  One idea per card. Settled hold = ~0.3 s per word (min 1.2 s) + 0.5 s; entrance 0.35-0.45 s. Adjust fonts and scale to brand.md once per business.
+  entrance: slide | slam | fade | type
+-->
+<html lang="en" data-composition-variables='[
+  {"id":"line","type":"string","label":"Line","default":"One idea."},
+  {"id":"support","type":"string","label":"Support line","default":""},
+  {"id":"kicker","type":"string","label":"Kicker (step number, label)","default":""},
+  {"id":"bg","type":"color","label":"Background","default":"#10201c"},
+  {"id":"fg","type":"color","label":"Text","default":"#f3efe6"},
+  {"id":"accent","type":"color","label":"Accent","default":"#e8a33d"},
+  {"id":"entrance","type":"string","label":"Entrance: slide | slam | fade | type","default":"slide"},
+  {"id":"align","type":"string","label":"Align: left | center","default":"left"}
+]'>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; }
+      #ts { position: relative; width: 1080px; height: 1920px; display: flex; flex-direction: column; justify-content: center; padding: 0 110px 120px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+      #ts.center { align-items: center; text-align: center; }
+      #kicker { font-size: 40px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
+      #rule { width: 120px; height: 10px; margin-bottom: 48px; transform-origin: left center; }
+      #ts.center #rule { transform-origin: center; }
+      #line { font-size: 96px; font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
+      #support { margin-top: 36px; font-size: 44px; font-weight: 400; line-height: 1.3; opacity: 0.85; }
+    </style>
+  </head>
+  <body>
+    <div id="ts" data-composition-id="text-scene" data-width="1080" data-height="1920" data-duration="3">
+      <div id="kicker"></div>
+      <div id="rule"></div>
+      <div id="line"></div>
+      <div id="support"></div>
+    </div>
+    <script>
+      const v = window.__hyperframes.getVariables();
+      const ts = document.getElementById("ts");
+      ts.style.background = v.bg;
+      ts.style.color = v.fg;
+      if (v.align === "center") ts.classList.add("center");
+      const kicker = document.getElementById("kicker");
+      kicker.textContent = v.kicker;
+      kicker.style.color = v.accent;
+      if (!v.kicker) kicker.style.display = "none";
+      document.getElementById("rule").style.background = v.accent;
+      const line = document.getElementById("line");
+      line.textContent = v.line;
+      const support = document.getElementById("support");
+      support.textContent = v.support;
+      if (!v.support) support.style.display = "none";
+
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#rule", { scaleX: 0 }, { scaleX: 1, duration: 0.35 }, 0);
+      if (v.kicker) tl.fromTo("#kicker", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0);
+      // One fromTo on #line so the static lint sees a single entrance tween; the variant only changes its values.
+      const from = { opacity: 0 };
+      const to = { opacity: 1, duration: 0.4 };
+      if (v.entrance === "slam") { from.scale = 1.25; to.scale = 1; to.duration = 0.3; }
+      else if (v.entrance === "fade") { to.duration = 0.6; }
+      else if (v.entrance !== "type") { from.x = 60; to.x = 0; }
+      if (v.entrance === "type") {
+        line.textContent = "";
+        const chars = v.line.split("");
+        chars.forEach((c, i) => {
+          const s = document.createElement("span");
+          s.textContent = c;
+          s.style.opacity = "0";
+          line.appendChild(s);
+          tl.to(s, { opacity: 1, duration: 0.01 }, 0.05 + i * Math.min(0.04, 1.2 / chars.length));
+        });
+      } else {
+        tl.fromTo("#line", from, to, 0.05);
+      }
+      if (v.support) tl.fromTo("#support", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35 }, 0.35);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["text-scene"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
