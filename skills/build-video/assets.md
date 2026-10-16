@@ -17,6 +17,7 @@ Copy each asset the storyboard names into `composition/assets/` under its ID (`A
 - **Speed**: not changed. A step that is too slow is cut, not sped up (reading floor and honesty both). If the brief explicitly wants a time-lapse feel, use `data-playback-rate` and say so in the build log.
 - **Slow push-in on a locked-off shot**: a GSAP `scale` from 1.0 to 1.06 over the clip's duration, `transformOrigin` at the subject. Nothing faster.
 - **Proxies**: `hyperframes.json` `"media": {"autoProxy": true}` lets `check` and preview use lighter copies; render uses the originals.
+- **Sparse keyframes**: phone and screen recordings often have one keyframe every few seconds; the compiler warns ("sparse keyframes … seek failures and frame freezing"). Re-encode the *copy* in `composition/assets/` (never the original): `ffmpeg -i A02.mp4 -c:v libx264 -r 30 -g 30 -keyint_min 30 -movflags +faststart -c:a copy A02.fixed.mp4` and reference the fixed file. Note it in the build log.
 
 What a clip may not do: play beyond its real content (a 3 s clip in a 4 s slot freezes; cut the slot to 3 s or add the next shot); be mirrored or colour-shifted to look like a different place; be reused for a scene it does not show (that is a gap, not a reuse).
 

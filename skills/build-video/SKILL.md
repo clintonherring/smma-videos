@@ -38,7 +38,8 @@ Project at `videos/<ID>-<slug>/composition/`:
   - placeholders: the same with `compositions/placeholder.html` and `{"shot":"<what is missing>"}`; grey, system font, bracketed text; it must look unfinished.
   - transitions and entrances from the type profile only (hard cut, match cut, slide, fade, wipe; slam / type-on / fade for text). No particles, no equaliser bars, no stock motion.
   - audio: on-camera sound from the clip, or narration on its own track (`npx hyperframes tts` for a generated voice when the brief says so), or nothing. Music only when the brief names a licensed file the owner supplied; never a bundled bed.
-- Register the GSAP timeline on `window.__timelines["main"]`, paused, with absolute positions; sub-compositions carry their own.
+- Register the GSAP timeline on `window.__timelines["main"]`, paused, with absolute positions; sub-compositions carry their own. Mark elements that deliberately slide off canvas with `data-layout-allow-overflow`.
+- Variants (a gap-A or gap-B comparison cut, an alternate hook) go in `variants/<name>.html`, never as a second root file: Hyperframes allows one root composition per project. In a variant, media and CSS paths are relative to the file (`../assets/A02.mp4`, `../caption.css`) but `data-composition-src` stays relative to the project root (`compositions/text-scene.html`). Render with `npx hyperframes render -c variants/<name>.html --output ../output/<ID>-<name>.mp4`.
 - Fonts: Google Fonts or system fallbacks declared in `brand.md`; Hyperframes fetches and pins declared families at check time.
 
 ## 3. Check
