@@ -1,12 +1,13 @@
 # Sources: what was taken, adapted and left out
 
-`smma-videos` is built from three places. None was adopted wholesale; each was read for the layer it is good at, and the kept parts were rewritten business-agnostic. This file says what came from where, so a future change knows what it is changing. Reviewed 2026-10-16.
+`smma-videos` is built from four places. None was adopted wholesale; each was read for the layer it is good at, and the kept parts were rewritten business-agnostic. This file says what came from where, so a future change knows what it is changing. Reviewed 2026-10-16.
 
 | Source | What it is | What we took from it |
 |---|---|---|
 | [clintonherring/videos](https://github.com/clintonherring/videos) | One business's (OpenSAR) video strategy, backlog, skills and reference notes, built in conversation over a few weeks | the **method** (one viewer, hook → signature → one idea → one CTA, the brief-summary stop, pillars / calendar / phases, backlog, performance log) and the **way it was built** (evidence before questions, ideas before pillars, proposals marked for the owner, refine by correction, take/leave notes for outside sources) |
 | [latent-spaces/brag](https://github.com/latent-spaces/brag) | Turns a project website into a 15–25 s launch video via Hyperframes | the **edit laws** and the **production pipeline** (plan → storyboard → composition brief → compose → `check` → render → poster as frame 0 → share copy), made asset-aware and type-aware |
 | [prateekjain98/social-media-manager-skills](https://github.com/prateekjain98/social-media-manager-skills) | Agent skills for growing a personal brand on X and Shorts | the **planning layer above the brief**: pillars with share and metric, cold-start phases, gaps / takes / story bank, saturation map, performance log, per-business folders |
+| [clintonherring/skills](https://github.com/clintonherring/skills) `job-post-resume-writer/skills/my-voice` | A skill that learns one person's writing voice from their own samples and applies it to every draft | the **voice method**: samples → read in full → statistical profile → `voice.md` with quoted patterns, their phrases, words to avoid and rewrite examples → read back and correct → check every line against it → add samples later |
 
 The two evaluations written for `videos` ([brag-evaluation.md](https://github.com/clintonherring/videos/blob/main/reference/brag-evaluation.md), [social-media-manager-evaluation.md](https://github.com/clintonherring/videos/blob/main/reference/social-media-manager-evaluation.md)) still hold here. Their leave-alone lists are inherited unchanged. What changed: the brag pipeline is now taken (it was left alone in `videos`), and everything from `videos` had OpenSAR removed.
 
@@ -21,7 +22,7 @@ The two evaluations written for `videos` ([brag-evaluation.md](https://github.co
 | `09-which-videos.md` pillars, season slots, phases, saturation, series, the picking rule | `strategy/09-which-videos.md`, `templates/business/{pillars,calendar,seeds}.md`, `video-schedule` | "season" became "calendar slots" (seasonal, key dates, or plain cadence); the picking rule adds an Assets line |
 | `06-delivery.md` on-camera delivery, coffee-shop test, feeling | `strategy/06-delivery-and-narration.md` | adds narration and captions-only as first-class ways to speak, since many businesses have no one on camera |
 | `make-video` skill (intake, vet, brief-summary stop, storyboard, publish block) | `skills/make-video` | asset-first: the stop now shows an **asset map** and a **gap report**, and nothing is written until every gap has one of four decisions |
-| `clinton-voice` skill (we say / not, slogan to sentence, the check) | `skills/business-voice` | part 1 is a guide that calibrates `voice.md` from the business's own writing; part 2 is the same line check, loaded by every writing step |
+| `clinton-voice` skill (one person's we say / not list and line check) | left out | too specific to one writer; replaced by the `my-voice` method from `clintonherring/skills` (below), which builds the equivalent list from any owner's own writing |
 | `video-fundamentals` skill | `skills/video-fundamentals` | OpenSAR roles and Rover removed; adds gap decisions, text scenes and the poster to the fail list |
 | `videos/BACKLOG.md`, `recordings/PERFORMANCE.md`, `reference/content-seeds.md` | `templates/business/` | per business, same columns; backlog statuses `idea → briefed → gaps-resolved → built → published` |
 | `reference/*-evaluation.md`, `reference/*-notes.md` | `skills/absorb-source` | the take/leave move made repeatable: what it is, table of layers, take, leave, where each piece landed |
@@ -80,7 +81,27 @@ Only the video-related rows from the `videos` evaluation; the leave-alone list i
 
 Reply farming, X communities, follow / unfollow quotas, engagement cohorts, three sessions a day, trending audio, algorithm weighting tables, AI-identity concealment, generic hook templates.
 
-## What none of the three had
+## 4. From `skills` (`my-voice`)
+
+### Taken
+
+- The three modes: build the profile, apply it, add a sample. `business-voice` keeps them as modes 1–3.
+- The build order: collect at least three unedited samples → read every sample in full → run the profiler → write the profile → read it back to the owner and correct it → remove the template marker. The profile is only true once the owner has said so.
+- The profile's shape: `Patterns to copy` with a quote for each, `Their phrases` verbatim, `Words and shapes to avoid`, `Rewrite examples` (agent draft → what they actually said). `templates/business/voice.md` adds `Signature line`, `Who speaks` and `Needs the owner`, which videos need and resumes do not.
+- The apply rule: read the profile first, every time; check each sentence against the patterns and the avoid list; when the owner says "that doesn't sound like me", ask them to say it and keep the pair as a rewrite example.
+- The test: would they say this out loud?
+- The profiler, ported from Python to `lib/voice.mjs` (`npx smma-videos voice-profile`) so the CLI stays Node-only; `extract-text` reads `.docx`, `.pdf`, `.html` and URLs the same way the original did.
+
+### Adapted
+
+- Samples are the owner's own writing *to customers* (site pages they wrote, emails, quotes, group posts, messages), not resume material; the profile is for spoken lines and captions, so the out-loud test replaces "would they write this".
+- The profile describes how the owner talks; it does not prescribe hedged numbers, trade-off framing or any other habit that belonged to the first business this repo was generalised from.
+
+### Left out
+
+The resume and job-posting parts of the skill set.
+
+## What none of the four had
 
 - **The asset map and the gap protocol.** All three assume the material exists (a website, a shoot day, a feed). Here the first question of every brief is what footage, stills and screens are actually there, and every missing scene gets one of four decisions: placeholder, designed text scene, leave out and redo the summary, or the owner provides it (`strategy/10-assets-and-gaps.md`).
 - **Text scenes as a real part of the video**, with the rule that they cannot be boring text (`strategy/11-text-scenes.md`, `build-video/compositions/text-scene.html`), and placeholders that must look unfinished.
