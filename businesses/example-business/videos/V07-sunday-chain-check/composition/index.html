@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+  V07 Sunday chain checks — launch, 18.8 s, 9:16.
+  The type test: same business, same assets and sub-compositions as V03, a different skeleton. Here the text scenes
+  are the centrepiece (hook type-on, three sequential highlight cards, a slammed punchline) and the one real visual
+  is a 3.5 s reveal; in V03 the footage carries the video and the cards frame the step.
+-->
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="caption.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #10201c; }
+      #root { position: relative; width: 100%; height: 100%; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+      :root { --cap-bg: rgba(16, 32, 28, 0.92); --cap-fg: #ffffff; --cap-accent: #e8a33d; }
+      #logo { position: absolute; left: auto; top: auto; right: 90px; bottom: 360px; width: 160px; height: 160px; object-fit: contain; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="18.8" data-width="1080" data-height="1920">
+
+      <!-- 1 hook card: the centrepiece, type-on, holds longest -->
+      <div id="s1" class="clip" data-start="0" data-duration="3.5" data-composition-id="ts-hook"
+           data-composition-src="compositions/text-scene.html"
+           data-variable-values='{"kicker":"From 4 October","line":"Sunday chain checks. Free with any service.","support":"","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"type","align":"left"}'></div>
+
+      <!-- 2 reveal: the name and the one real visual -->
+      <video id="s2" class="clip" data-start="3.5" data-duration="3.5" data-media-start="0" src="assets/A02.mp4" muted></video>
+      <div id="c2" class="clip caption" data-start="3.5" data-duration="3.5">Northside Cycle Repair. Sundays, ten till one.</div>
+
+      <!-- 3 highlight cards, sequential -->
+      <div id="s3a" class="clip" data-layout-allow-overflow data-start="7" data-duration="2.6" data-composition-id="ts-h1"
+           data-composition-src="compositions/text-scene.html"
+           data-variable-values='{"kicker":"1","line":"About thirty seconds. One bike per visit.","support":"","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"slide","align":"left"}'></div>
+      <div id="s3b" class="clip" data-layout-allow-overflow data-start="9.6" data-duration="3" data-composition-id="ts-h2"
+           data-composition-src="compositions/text-scene.html"
+           data-variable-values='{"kicker":"2","line":"You see the number on the gauge.","support":"","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"slide","align":"left"}'></div>
+      <div id="s3c" class="clip" data-start="12.6" data-duration="3" data-composition-id="ts-h3"
+           data-composition-src="compositions/text-scene.html"
+           data-variable-values='{"kicker":"3","line":"Chain from €25, fitted, if it needs one.","support":"","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"slide","align":"left"}'></div>
+
+      <!-- 4 punchline + CTA -->
+      <div id="s4" class="clip" data-start="15.6" data-duration="3.2" data-composition-id="ts-punch"
+           data-composition-src="compositions/text-scene.html"
+           data-variable-values='{"kicker":"","line":"Bring the bike. Keep the cassette.","support":"northsidecycles.example/book","bg":"#10201c","fg":"#f3efe6","accent":"#e8a33d","entrance":"slam","align":"left"}'></div>
+      <img id="logo" class="clip" data-start="15.6" data-duration="3.2" src="assets/A03.png" alt="" />
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#c2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3 }, 3.5);
+      // Highlight cards: each slides in from the right as the previous slides out left (clean slides, launch profile).
+      tl.fromTo("#s3a", { x: 1080 }, { x: 0, duration: 0.3 }, 7);
+      tl.to("#s3a", { x: -1080, duration: 0.3 }, 9.3);
+      tl.fromTo("#s3b", { x: 1080 }, { x: 0, duration: 0.3 }, 9.6);
+      tl.to("#s3b", { x: -1080, duration: 0.3 }, 12.3);
+      tl.fromTo("#s3c", { x: 1080 }, { x: 0, duration: 0.3 }, 12.6);
+      tl.fromTo("#logo", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 16);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 // Plain Node test runner: no dependencies. `npm test`.
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { packageRoot } from "../lib/paths.mjs";
@@ -151,6 +151,33 @@ test("skills: every SKILL.md under 500 lines with name + description frontmatter
       if (existsSync(a)) assert.ok(existsSync(b) && readFileSync(a, "utf8") === readFileSync(b, "utf8"), `.cursor/skills/${n} out of date: run npx smma-videos install --agent cursor`);
     }
   }
+});
+
+test("example business: every tier ready; one [Owner] left in brand.md makes only the build tier draft", () => {
+  const src = path.join(packageRoot, "businesses", "example-business");
+  if (!existsSync(src)) return;
+  const a = assess("example-business", packageRoot);
+  for (const t of TIERS) assert.equal(a.tiers[t].state, "ready", `${t}: ${JSON.stringify(a.tiers[t])}`);
+  assert.equal(a.next, null);
+  // Copy the markdown to a temp root, re-introduce an unconfirmed proposal, and the tracker must say so without touching the other tiers.
+  const root = tmp();
+  const dir = path.join(root, "businesses", "example-business");
+  const copyMd = (fromDir, toDir) => {
+    mkdirSync(toDir, { recursive: true });
+    for (const f of readdirSync(fromDir, { withFileTypes: true })) {
+      if (f.isDirectory()) { if (f.name !== "videos") copyMd(path.join(fromDir, f.name), path.join(toDir, f.name)); continue; }
+      if (f.name.endsWith(".md")) writeFileSync(path.join(toDir, f.name), readFileSync(path.join(fromDir, f.name), "utf8"));
+    }
+  };
+  copyMd(src, dir);
+  writeFileSync(path.join(dir, "brand.md"), readFileSync(path.join(dir, "brand.md"), "utf8").replace("| Accent | `#e8a33d` (brass) |", "| Accent | [Owner] confirm `#e8a33d` |"));
+  const b = assess("example-business", root);
+  assert.equal(b.status.brand, "draft");
+  assert.equal(b.tiers.schedule.state, "ready");
+  assert.equal(b.tiers.brief.state, "ready");
+  assert.equal(b.tiers.build.state, "draft");
+  assert.equal(b.next.id, "brand");
+  rmSync(root, { recursive: true, force: true });
 });
 
 let failed = 0;
