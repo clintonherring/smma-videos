@@ -1,0 +1,35 @@
+{
+  "name": "smma-videos",
+  "version": "0.1.0",
+  "description": "Agent skills and a small CLI that take a business from sources (URLs, text, images, clips) to a video posting schedule and rendered videos.",
+  "type": "module",
+  "bin": {
+    "smma-videos": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "skills",
+    "strategy",
+    "templates",
+    "docs",
+    "README.md"
+  ],
+  "scripts": {
+    "doctor": "node bin/cli.mjs doctor",
+    "init": "node bin/cli.mjs init",
+    "readiness": "node bin/cli.mjs readiness",
+    "inventory": "node bin/cli.mjs inventory",
+    "poster": "node bin/cli.mjs poster",
+    "install-skills": "node bin/cli.mjs install --agent all",
+    "test": "node test/run.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clintonherring/smma-videos"
+  },
+  "license": "MIT"
+}

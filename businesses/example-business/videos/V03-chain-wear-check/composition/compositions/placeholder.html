@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+  smma-videos placeholder (gap decision A). Deliberately plain: grey card, system font, bracketed text.
+  It must look unfinished so nobody publishes it by accident.
+  Mount from index.html:
+    <div class="clip" data-start="6" data-duration="2" data-composition-id="ph1"
+         data-composition-src="compositions/placeholder.html"
+         data-variable-values='{"shot":"worn cassette next to a new one, close, workshop light"}'></div>
+  Do not restyle to the brand. A placeholder in brand colours is a text scene that lies.
+-->
+<html lang="en" data-composition-variables='[
+  {"id":"shot","type":"string","label":"Missing shot (from the gap report)","default":"missing shot"},
+  {"id":"gap","type":"string","label":"Gap number","default":""}
+]'>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; }
+      #ph { position: relative; width: 1080px; height: 1920px; background: #8c8c8c; color: #1a1a1a; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 120px; text-align: center; font-family: ui-monospace, Menlo, Consolas, "Liberation Mono", monospace; }
+      #ph::before { content: ""; position: absolute; inset: 40px; border: 6px dashed #5c5c5c; }
+      #gap { font-size: 40px; margin-bottom: 40px; opacity: 0.8; }
+      #shot { font-size: 60px; line-height: 1.25; font-weight: 700; }
+      #note { margin-top: 48px; font-size: 36px; opacity: 0.8; }
+    </style>
+  </head>
+  <body>
+    <div id="ph" data-composition-id="placeholder" data-width="1080" data-height="1920" data-duration="2">
+      <div id="gap"></div>
+      <div id="shot"></div>
+      <div id="note">not for publishing</div>
+    </div>
+    <script>
+      const v = window.__hyperframes.getVariables();
+      document.getElementById("shot").textContent = "[PLACEHOLDER: " + v.shot + "]";
+      const gap = document.getElementById("gap");
+      gap.textContent = v.gap ? "GAP " + v.gap : "";
+      if (!v.gap) gap.style.display = "none";
+    </script>
+  </body>
+</html>

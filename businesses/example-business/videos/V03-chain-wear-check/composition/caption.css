@@ -1,0 +1,55 @@
+/*
+  smma-videos caption patterns. Copy into composition/ and <link> it from index.html.
+  Both styles passed `npx hyperframes check` contrast (WCAG AA) over footage because the text
+  sits on a solid or near-solid pill, never directly on the picture.
+  Set the colours from brand.md: --cap-bg is the brand background at ~0.92 alpha, --cap-fg the brand text colour.
+  Sizes are for 1080x1920; see type-profiles.md "Format defaults" for 16:9 and 1:1.
+*/
+
+:root {
+  --cap-bg: rgba(16, 32, 28, 0.92);
+  --cap-fg: #ffffff;
+  --cap-accent: #e8a33d;
+  --cap-font: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Every timed element is absolutely positioned on the canvas. */
+.clip { position: absolute; inset: 0; }
+video.clip, img.clip { width: 100%; height: 100%; object-fit: cover; }
+
+/* Spoken-line caption: the default. Six to eight words, lower third, above the bottom 15 % safe zone. */
+.caption {
+  position: absolute;
+  left: 80px; right: 80px; bottom: 420px; top: auto; height: auto;
+  color: var(--cap-fg);
+  background: var(--cap-bg);
+  font-family: var(--cap-font);
+  font-size: 56px; font-weight: 600; line-height: 1.25;
+  padding: 24px 32px; border-radius: 16px;
+}
+
+/* The rule or limit, said once: same pill, the accent colour marks it. */
+.caption.rule { border-left: 14px solid var(--cap-accent); }
+
+/* Quiet technical caption (explainer; the technical layer when a character speaks): small, bottom third, no animation. */
+.caption.quiet {
+  bottom: 360px;
+  font-size: 40px; font-weight: 500;
+  padding: 16px 24px; border-radius: 10px;
+  background: rgba(0, 0, 0, 0.78); color: #ffffff;
+}
+
+/* Lower third for a name or a number (walkthrough, explainer). Left-anchored, not full width. */
+.lower-third {
+  position: absolute;
+  left: 80px; right: auto; bottom: 480px; top: auto; height: auto;
+  display: inline-block; max-width: 760px;
+  color: var(--cap-fg); background: var(--cap-bg); font-family: var(--cap-font);
+  font-size: 44px; font-weight: 600; line-height: 1.2;
+  padding: 18px 28px; border-radius: 12px;
+}
+.lower-third small { display: block; font-size: 30px; font-weight: 400; opacity: 0.85; margin-top: 6px; }
+
+/* Letterbox a landscape clip inside a portrait canvas on the brand colour instead of stretching it (assets.md). */
+.clip.letterbox { background: var(--cap-bg); }
+.clip.letterbox video, .clip.letterbox img { object-fit: contain; }
