@@ -11,10 +11,11 @@ a real vertical — a readiness DAG, a gap protocol when inputs are
 missing, and human approval gates before render and publish. Honest
 caveat: early (v0.1), light tests, render dependencies local.
 
-**The bigger picture:** across my public repos this is one piece of a
-broader demonstration of coordinated human+agent work — durable agent
-operations, multi-skill orchestration with human approval gates, packaged
-distributable skills, and transparent, injection-aware agent practices.
+**The bigger picture:** I build concrete, usable AI tools — this one
+runs a real pipeline from business facts to rendered video, with a human
+approving every gap. The rest of the set shows the depth around it:
+durable agent operations, packaged distributable skills, and transparent,
+injection-aware agent practices.
 
 This repo participates in a public transparency experiment:
 [central-guestbook](https://github.com/clintonherring/central-guestbook) —
